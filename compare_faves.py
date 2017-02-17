@@ -18,4 +18,14 @@ def compare_faves(sonia_faves, ally_faves):
     elif sonia_faves != ally_faves:
         print "Our favorite foods are different!"
 
-compare_faves(sonia_faves, ally_faves)
+# compare_faves(sonia_faves, ally_faves)
+
+
+def compare_faves2(sonia_faves, ally_faves):
+    for food in sonia_faves:
+        if food in ally_faves:
+            return "We both like %s" %(food) 
+        # else:
+        #     return "Our favorite foods are different"
+
+print compare_faves2(sonia_faves, ally_faves)
